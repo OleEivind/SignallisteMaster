@@ -1,0 +1,37 @@
+Revisjon 1.0 (endringer fra tidlegere versjoner):
+	- Skriver full dato og tid på mappe som eksporteres.
+	- Korrekt skriving av 61850 signaler for interface mot vern (mot vern og krysskobling mot 104)
+	- Rydding i Visual Basic kode med oversiktilg innrykk av kode.
+	- Korrigert bruk av "Netcon Rgmask", "Netcon Ststion" og "Netcon Chan" i Netcon fila.
+	
+Revisjon 1.1:
+	- Endret IOA adresser i henhold til Statkraft sine standarder.
+	- Lagt til IO type 46 for HW liste printout.
+	
+Revisjon 2.0:
+	- Oppdatert HW_List template. Laget generell text for prosjekt som manuelt må oppdateres.
+	- Oppdatert formatering av celler i master liste. Generell gjennomgang og rettinger.
+	- Endret tekst fra Ststion til Station (XL ark og VB skript). Dette vare en skriveleif på tidligere versjoner.
+	- Oppdatert HISTO.DAT. Nå generes Histo.dat komplett basert på oppsett i Master lista.
+	- Gjort det mulig å definere 104 start adresser i XL arket. Dette var tidligere hardkodet inn i skriptet.
+	- Generer sekundær interface mot node for Netcontrol 104 konfigurasjon. Dette måtte manuelt håndteres i Netcontrol fila før.
+	- Minimum adresse for generering av lokal 104 IO adresse endret 75000 to 10000. Dette ble ofte feil før når vi generert adresser for IED'er.
+	- Lagt til Info. Det er nå informasjon om alle tab'er og kolonner som beskrives i dokumentet.
+	- Slettet Digital Min og Digital Max. Disse kolonnene er ikke i bruk.
+	- Flyttet Event ON/OFF kolonnene. Plassert de mer hensiksmessig.
+	- Slettet Pcvue Feedback kolonne. Denne blir i hovedsak ikke brukt.
+	- Deleted Engiby tab. Denne var tom og ikke i bruk.
+	
+Revisjon 2.1:
+	- Satt inn "Pcvue Feedback" kolonnen på nytt siden den ble brukt på noen prosjekter.
+	- Korrigert printing av første linje i Histo.dat
+	- Korrigert skriving av slave signaler til/fra PLS (type 30)
+	
+Revisjon 3.0:
+	- Signallister til PLS programmet (Saia PG5) blir nå automatisk generert
+	
+Revisjon 3.1:
+	- Generere clean IOA basert på riktig start adresse for hver enkelt signal type. Dette hentes nå fra "104Address" tab'en.
+	- Når to signaler for samme node har samme IOA, så får man feilmelding i utskriftsvinduet. Man må ta stilling til meldinga manuelt.
+	  Tekst blir rødmerket når dette inntreffer.
+

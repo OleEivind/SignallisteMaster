@@ -1,0 +1,5 @@
+**********************************************************************************************************************************
+* Noter forslag til rettinger og oppdateringer. Husk å skriv navn, dato og hvilken revisjon.
+* Eksempel:
+* - Feil navn på kolonne "Netcon Ststion". Skulle vært "Netcon Station". Feil på Revisjon 1.1. Ole Eivind Hjemgård 23.05.2019
+**********************************************************************************************************************************
